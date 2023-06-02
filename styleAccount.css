@@ -1,0 +1,80 @@
+/*pop-up account*/
+#accountContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1, 0.1);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  .accountBox {
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+    height: 420px;
+    width: 420px;
+  }
+  .accountHeadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .accountHeadline button {
+    border-color: white;
+    font-size: 24px;
+    border-radius: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border-style: none;
+    height: 54px;
+    width: 54px;
+  }
+  
+  .accountButtons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .accountButtons button {
+    font-size: 16px;
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 50%;
+    border: rgb(252, 252, 252);
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .logIn {
+    background-color: rgb(245, 243, 241);
+  }
+  
+  .createAccount {
+    background-color: rgb(243, 104, 5);
+    color: white;
+  }
+  
+  .accountListItem {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+  
+  .accountListItem:hover {
+    background-color: rgb(245, 243, 241);
+    border-radius: 5px;
+  }
+  
+  .accountListIcon {
+    height: 24px;
+  }

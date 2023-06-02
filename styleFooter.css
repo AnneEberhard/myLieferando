@@ -1,0 +1,29 @@
+/*footer style*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(239, 237, 234);
+    font-size: 12px;
+    z-index: 999;
+    position: relative;
+    padding-top: 16px;
+    height: 80px;
+  }
+  
+  .footerNav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .footerNav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footerNav a:hover {
+    text-decoration: underline;
+  }

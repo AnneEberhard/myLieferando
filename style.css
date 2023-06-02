@@ -1,0 +1,347 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*general style*/
+.mainContainer {
+  display: flex;
+  width: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+  padding-left: 4px;
+}
+
+/*fixed part left side*/
+.picture {
+  background-image: url("./img/remise.jpg");
+  background-position: center;
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.smallInfo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: green;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+  font-family: "Julee", cursive;
+  position: relative;
+  margin-top: 260px;
+  margin-left: 24px;
+}
+.leftSide {
+  z-index: 1;
+  position: relative;
+  box-shadow: 1px 6px 5px rgba(1, 1, 1, 0.1);
+  width: 70%;
+}
+.restaurant {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.restaurantInfo {
+  color: grey;
+  font-size: 14px;
+  position: relative;
+  margin-top: 340px;
+}
+.restaurantHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black !important;
+}
+.restaurantHeader img {
+  height: 24px;
+}
+.stars {
+  display: flex;
+  align-items: center;
+}
+.restaurantIconBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  box-shadow: 1px 6px 5px rgba(1, 1, 1, 0.1);
+  overflow: hidden;
+  width: 73vw;
+  position: sticky;
+  top: 0 !important;
+  background-color: white;
+  z-index: 8;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 0;
+}
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+.navMenu {
+  border-radius: 20px;
+  color: rgb(48, 61, 63);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.navMenu:hover {
+  background-color: rgb(245, 243, 241);
+}
+
+.searchIcon {
+  background-color: rgb(245, 243, 241);
+  border-radius: 100%;
+  padding: 4px;
+}
+
+.searchIcon:hover {
+  filter: brightness(80%);
+}
+
+.highlight {
+  background-color: black;
+  color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 20px;
+}
+
+.highlight:hover {
+  background-color: rgb(25, 25, 25);
+  filter: brightness(80%);
+}
+
+/*rendered part left side*/
+#menu {
+  background-color: rgb(252, 252, 252);
+}
+
+.menuItem {
+  border: solid 1px grey;
+  border-radius: 10px;
+  background-color: white;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.menuItem:hover {
+  filter: brightness(90%);
+}
+
+.menuItemTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.addButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  font-size: 32px;
+  height: 40px;
+  width: 40px;
+}
+
+.menuItemText {
+  margin: 0;
+}
+
+/*right Side*/
+.rightSide {
+  background-color: white;
+  border-style: ridge;
+  border: 1px grey;
+  position: sticky;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  z-index: 99;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 30%;
+}
+
+.emptyShoppingBasket {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+h4 {
+  text-align: center;
+}
+
+#shoppingBasket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+#shoppingBasketItems {
+  overflow: auto;
+  max-height: 55vh;
+  width: 100%;
+}
+
+#shoppingBasketTotal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemShoppingBasket {
+  width: 100%;
+}
+.underlined {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.itemShoppingBasket table {
+  width: 100%;
+}
+.itemShoppingBasket td:first-child {
+  vertical-align: text-top;
+}
+.itemShoppingBasket td:last-child {
+  text-align: end;
+}
+
+.itemShoppingBasket a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.grey {
+  color: rgba(1, 1, 1, 0.5);
+}
+
+.buttonsPlusMinus {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.totalShoppingBasket {
+  width: 100%;
+}
+
+.totalShoppingBasket td:last-child {
+  text-align: end;
+}
+
+.totalShoppingBasket tr:last-child {
+  font-weight: bold;
+}
+
+.payButton {
+  width: 90%;
+  color: white;
+  font-weight: bold;
+  border-radius: 40px;
+  background-color: #f15d00;
+  height: 56px;
+  margin-top: 16px;
+  border-color: #f15d00;
+  font-size: 20px;
+  border-style: none;
+  cursor: pointer;
+}
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(1, 1, 1, 0.1);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/*remarks*/
+.remark {
+  display: flex;
+  flex-direction: column;
+}
+
+.remarkInputField {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  height: 60px;
+  margin: 4px;
+  border-radius: 10px;
+  border-color: rgba(1, 1, 1, 0.5);
+}
+
+.remarkInputLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 4px;
+  color: blue !important;
+  text-decoration: underline;
+  padding-right: 24px;
+}
+
+/*additional sites*/
+.support {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.impressum {
+  padding: 16px;
+  flex: 1;
+}

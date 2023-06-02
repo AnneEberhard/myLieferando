@@ -1,0 +1,32 @@
+/*header style*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+    height: 80px;
+    box-shadow: 0px 6px 5px rgba(1, 1, 1, 0.1);
+  }
+  
+  .brand {
+    color: #f15d00;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .headerNav img {
+    height: 24px;
+    margin-right:4px;
+  }
+
+  .headerNav a {
+     cursor:pointer;
+  }
+
+  

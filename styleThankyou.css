@@ -1,0 +1,22 @@
+#ThankYouContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1, 0.1);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ThankYouHeadline {
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  .ThankYouText {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+  }

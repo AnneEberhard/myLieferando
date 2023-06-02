@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myLieferando</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./icon/icons8-restaurant-16.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./styleAccount.css" />
+    <link rel="stylesheet" href="./styleThankyou.css" />
+    <link rel="stylesheet" href="./styleHeader.css" />
+    <link rel="stylesheet" href="./styleFooter.css" />
+    <link rel="stylesheet" href="./styleMobileView.css" />
+    <script src="./script.js"></script>
+    <script src="./scriptAccount.js"></script>
+    <script src="./scriptMobileView.js"></script>
+    <script src="./scriptRender.js"></script>
+    <script src="./scriptShoppingBasket.js"></script>
+    <script src="./scriptThankyou.js"></script>
+  </head>
+  <body onload="includeHTML(), render()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="mainContainer">
+      <section id="accountContainer" class="d-none" onclick="hideAccount()">
+        <div class="accountBox" onclick="doNotClose(event)">
+          <div class="accountHeadline">
+            <h3>Mein Account</h3>
+            <button class="addButton" onclick="hideAccount()">x</button>
+          </div>
+          <div class="accountButtons">
+            <button class="logIn">Anmelden</button
+            ><button class="createAccount">Account erstellen</button>
+          </div>
+          <div class="accountList">
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-shopping-bag-32.png"
+              />Bestellungen
+            </div>
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-heart-white-26.png"
+              />Favoriten
+            </div>
+            <div class="separator"></div>
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-gift-50.png"
+              />Punkte
+            </div>
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-warranty-50.png"
+              />Stempelkarten
+            </div>
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-info-white-32.png"
+              />Brauchst du Hilfe?
+            </div>
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-loyalty-32.png"
+              />Geschenkkarten
+            </div>
+            <div class="separator"></div>
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-scooter-24.png"
+              />Fahrerer*in werden
+            </div>
+            <div class="accountListItem">
+              <img
+                class="accountListIcon"
+                src="./icon/icons8-organization-26.png"
+              />Lieferando for business
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ThankYouContainer" class="d-none" onclick="hideThankYou()">
+        <div class="accountBox" onclick="doNotClose(event)">
+          <div class="ThankYouHeadline">
+            <button class="addButton" onclick="hideThankYou()">x</button>
+          </div>
+          <div class="ThankYouText">
+            Vielen Dank für die Bestellung! Sie wird so rasch wie möglich bearbeitet und trifft bei Dir ein!
+          </div>
+        </div>
+      </section>
+      <section class="leftSide">
+        <div class="picture">
+          <div class="smallInfo">Leckerladen</div>
+        </div>
+        <div class="restaurant">
+          <div class="restaurantInfo">
+            <div class="restaurantHeader">
+              <h1>Leckerladen</h1>
+              <div>
+                <a href=""
+                  ><img class="restaurantIcon" src="./icon/icons8-info-24.png"
+                /></a>
+                <a href=""
+                  ><img class="restaurantIcon" src="./icon/icons8-heart-96.png"
+                /></a>
+              </div>
+            </div>
+
+            <div class="stars">
+              <img src="./icon/icons8-star-filled-24.png" />
+              <img src="./icon/icons8-star-filled-24.png" />
+              <img src="./icon/icons8-star-filled-24.png" />
+              <img src="./icon/icons8-star-filled-24.png" />
+              <img src="./icon/icons8-stars-24.png" />
+              17 Bewertungen
+            </div>
+            <div class="restaurantIconBar">
+              <div class="icon">
+                <img src="./icon/icons8-clock-24.png" />Lieferung in 25-45 min
+              </div>
+              |
+              <div class="icon">
+                <img src="./icon/icons8-bike-path-24.png" />Kostenlos
+              </div>
+              |
+              <div class="icon">
+                <img src="./icon/icons8-shopping-bag-32.png" />Min. 10,00 €
+              </div>
+              |
+              <div class="icon">
+                <img src="./icon/icons8-info-24.png" />Servicegebühr 0,89 €
+              </div>
+            </div>
+            <p>
+              Bei diesem Restaurant kannst du Stempel sammeln. Stelle beim
+              Bestellabschluss bitte sicher, dass du dich für unseren Newsletter
+              angemeldet hast, um deine Stempel per E-Mail zu erhalten.
+            </p>
+          </div>
+          <nav>
+            <a href=""
+              ><img src="./icon/icons8-search-24.png" class="searchIcon"
+            /></a>
+            <a class="highlight" href="#headPopular">Beliebt</a>
+            <a class="navMenu" href="#headSoup">Suppen und Eintöpfe</a>
+            <a class="navMenu" href="#headSalad">Salate</a>
+            <a class="navMenu" href="#headSchnitzel">Schnitzelgerichte</a>
+          </nav>
+          <div id="menu">
+            <h2 id="headPopular">Beliebt</h2>
+            <div id="popular"></div>
+            <h2 id="headSoup">Suppen und Eintöpfe</h2>
+            <div id="soup"></div>
+            <h2 id="headSalad">Salate</h2>
+            <div id="salad"></div>
+            <h2 id="headSchnitzel">Schnitzelgerichte</h2>
+            <div id="schnitzel"></div>
+          </div>
+
+          <h3>Impressum</h3>
+          <p>
+            Leckerladen <br />
+            Fantasiestraße 1<br />00000 Hauptstadt von Nirgendwo <br />
+            für Website-Impressum s. Footer
+          </p>
+        </div>
+      </section>
+      <section id="rightSide" class="rightSide">
+        <button onclick="hideMobileShoppingBasket()" id="mobileHideShoppingBasket" class="hide">x</button>
+        <h2>Warenkorb</h2>
+        <div id="shoppingBasket">
+          <div id="shoppingBasketItems"></div>
+          <div id="shoppingBasketTotal"></div>
+        </div>
+      </section>
+      <div id="clickMobileView"></div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+  </body>
+</html>
